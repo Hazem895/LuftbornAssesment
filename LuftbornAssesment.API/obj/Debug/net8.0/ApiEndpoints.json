@@ -1,0 +1,87 @@
+[
+  {
+    "ContainingType": "LuftbornAssesment.Api.Controllers.DriversController",
+    "Method": "SelectRequest",
+    "RelativePath": "api/Drivers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LuftbornAssesment.Api.Controllers.DriversController",
+    "Method": "CreateRequest",
+    "RelativePath": "api/Drivers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "InputData",
+        "Type": "LuftbornAssesment.Domain.DriversDomain.Driver",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LuftbornAssesment.Api.Controllers.DriversController",
+    "Method": "SelectByIdRequest",
+    "RelativePath": "api/Drivers/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LuftbornAssesment.Api.Controllers.DriversController",
+    "Method": "UpdateRequest",
+    "RelativePath": "api/Drivers/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "InputData",
+        "Type": "LuftbornAssesment.Domain.DriversDomain.Driver",
+        "IsRequired": true
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LuftbornAssesment.Api.Controllers.DriversController",
+    "Method": "DeleteRequest",
+    "RelativePath": "api/Drivers/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
