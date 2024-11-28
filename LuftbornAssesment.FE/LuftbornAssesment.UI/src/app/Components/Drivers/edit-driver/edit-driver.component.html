@@ -1,0 +1,33 @@
+<div class="container my-5">
+    <h1 class="mb-3">Edit Driver</h1>
+    <div class="row">
+            <form #form="ngForm" (ngSubmit)="UpdateDriver()">
+                <div class="col-12 row">
+                        <div class="col-5 mb-3">
+                          <label for="firstnametxt" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="firstnametxt"
+                           [(ngModel)] = "DriverData.firstname" name="firstname">
+                        </div>
+                        <div class="col-5 mb-3">
+                            <label for="lastnametxt" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastnametxt"
+                            [(ngModel)] = "DriverData.lastname" name="lastname">
+                        </div>    
+                        <div class="col-5 mb-3">
+                            <label for="emailtxt" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailtxt"
+                            [(ngModel)] = "DriverData.email" name="email">
+                        </div>    
+                        <div class="col-5 mb-3">
+                            <label for="phonenumbertxt" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phonenumbertxt"
+                            [(ngModel)] = "DriverData.phoneNumber" name="phoneNumber">
+                        </div>    
+                </div>
+        
+                <button type="submit" class="btn btn-primary">Update</button><span>&nbsp;&nbsp;</span>
+                <button type="button" class="btn btn-danger" [routerLink]="['']">Back</button>
+              </form>
+            
+    </div>
+</div>

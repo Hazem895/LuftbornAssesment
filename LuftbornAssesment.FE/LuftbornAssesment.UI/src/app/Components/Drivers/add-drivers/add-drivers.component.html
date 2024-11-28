@@ -1,0 +1,33 @@
+<div class="container my-5">
+    <h1 class="mb-3">Add New Driver</h1>
+    <div class="row">
+            <form #form="ngForm" (ngSubmit)="AddDriver()">
+                <div class="col-12 row">
+                        <div class="col-5 mb-3">
+                          <label for="firstnametxt" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="firstnametxt"
+                           [(ngModel)] = "addDriverReq.firstname" name="firstname">
+                        </div>
+                        <div class="col-5 mb-3">
+                            <label for="lastnametxt" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastnametxt"
+                            [(ngModel)] = "addDriverReq.lastname" name="lastname">
+                        </div>    
+                        <div class="col-5 mb-3">
+                            <label for="emailtxt" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailtxt"
+                            [(ngModel)] = "addDriverReq.email" name="email">
+                        </div>    
+                        <div class="col-5 mb-3">
+                            <label for="phonenumbertxt" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phonenumbertxt"
+                            [(ngModel)] = "addDriverReq.phoneNumber" name="phoneNumber">
+                        </div>    
+                </div>
+        
+                <button type="submit" class="btn btn-primary">Add</button><span>&nbsp;&nbsp;</span>
+                <button type="button" class="btn btn-danger" [routerLink]="['']">Back</button>
+              </form>
+            
+    </div>
+</div>
